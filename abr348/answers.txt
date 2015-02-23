@@ -1,0 +1,44 @@
+IPython Questions
+
+1.  I used the command ?os.path.abspath to find information about the function,
+    and the location of the file is /usr/lib/python2.7/posixpath.py
+    
+2. We can use the command 'ls /etc | wc -l' to count the number of files in the /etc 
+   directory. We can use the cell magic command %%! To feed Python the above shell command. 
+   We can then assign the result to the variable 'num' by using the 'Out' syntax and 
+   assigning it to the right output (Out[84] in this case).  
+  
+    %%!
+    ...: ls /etc -1 | wc -l
+    ...: 
+	Out[84]: ['232']
+	num=Out[84]
+	
+3. Python has an exponentiation operator using the double stars "**". num[0] takes the 
+   first component of the object 'num', and the 'int' function converts num[0] to an integer, 
+   which we then raise to the 0.5 power. The result is ~15.231.....
+   
+	int(num[0])**(0.5)
+	Out[86]: 15.231546211727817
+   
+4.  Based on the output of running these functions (pasted below), x*x is the fastest computation method. 
+
+     A. X**2: 10000000 loops, best of 3: 53.6 ns per loop
+	 B. x*x: 10000000 loops, best of 3: 40.2 ns per loop
+     C. Numpy.square(x): 1000000 loops, best of 3: 1.12 µs per loop
+ 
+5. When I run %lsmagic, it returns the following list of cell magic commands:
+
+	%%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  
+	%%latex  %%perl  %%prun  %%pypy  %%python  %%python3  %%ruby  %%script  %%sh  
+	%%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+	Counting these, there are 24 cell magic commands.
+
+PyDev Question #5
+
+5. The content of the 'Console' view after the program has completed is:
+
+	hello world
+
+	

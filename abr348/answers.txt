@@ -3,7 +3,7 @@ IPython Questions
 1.  I used the command ?os.path.abspath to find information about the function,
     and the location of the file is /usr/lib/python2.7/posixpath.py
     
-2. We can use the command 'ls /etc | wc -l' to count the number of files in the /etc 
+2. We can use the command 'ls /etc -1 | wc -l' to count the number of files in the /etc 
    directory. We can use the cell magic command %%! To feed Python the above shell command. 
    We can then assign the result to the variable 'num' by using the 'Out' syntax and 
    assigning it to the right output (Out[84] in this case).  
